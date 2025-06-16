@@ -17,13 +17,16 @@
         <div class="row">
             <div class="col-sm-8 col-md-8 portfolio-block">                <div class="owl-carousel portfolio-page-carousel">
                     <div class="item">
-                        <img src="img/portfolio/full/1.jpg" alt="Portal Captação de Recursos - Tela 1" class="carousel-image" data-index="0" />
+                        <img src="./img/portfolio/captacaoRecursos/cap-recursos-01.png" alt="Portal Captação de Recursos - Página Inicial" class="carousel-image" data-index="0" />
                     </div>
                     <div class="item">
-                        <img src="img/portfolio/full/2.jpg" alt="Portal Captação de Recursos - Tela 2" class="carousel-image" data-index="1" />
+                        <img src="./img/portfolio/captacaoRecursos/cap-recursos-02.png" alt="Portal Captação de Recursos - Dados do Projeto" class="carousel-image" data-index="1" />
                     </div>
                     <div class="item">
-                        <img src="img/portfolio/full/3.jpg" alt="Portal Captação de Recursos - Tela 3" class="carousel-image" data-index="2" />
+                        <img src="./img/portfolio/captacaoRecursos/cap-recursos-03.png " alt="Portal Captação de Recursos - Programas e assistências" class="carousel-image" data-index="2" />
+                    </div>
+                    <div class="item">
+                        <img src="./img/portfolio/captacaoRecursos/cap-recursos-04.png" alt="Portal Captação de Recursos - Carteira de Projetos" class="carousel-image" data-index="3" />
                     </div>
                 </div>
                 
@@ -36,17 +39,23 @@
                     <!-- Navegação do carousel no lightbox -->
                     <a class="lightbox-prev" id="lightbox-prev">&#10094;</a>
                     <a class="lightbox-next" id="lightbox-next">&#10095;</a>
-                    
-                    <!-- Indicadores de posição -->
+                      <!-- Indicadores de posição -->
                     <div class="lightbox-indicators">
                         <span class="lightbox-dot" data-slide="0"></span>
                         <span class="lightbox-dot" data-slide="1"></span>
                         <span class="lightbox-dot" data-slide="2"></span>
+                        <span class="lightbox-dot" data-slide="3"></span>
                     </div>
                 </div>
 
 
                 <style> 
+                    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; padding: 20px; } 
+                    h2 { padding: 30px 0px 10px 0px; } 
+                    h4 { color: #02B4E0; padding: 30px 0px 7px 0px; } 
+                    ul { list-style-type: disc; margin-left: 20px; }
+
+
                     /* Estilo do carrossel */
                     .carousel-image {
                         cursor: pointer;
@@ -200,20 +209,23 @@
                                 autoHeight:true
                             });
                         });
-                        
-                        // Array com as informações das imagens
+                          // Array com as informações das imagens
                         var images = [
                             {
-                                src: "img/portfolio/full/1.jpg",
-                                alt: "Portal Captação de Recursos - Tela 1"
+                                src: "./img/portfolio/captacaoRecursos/cap-recursos-01.png",
+                                alt: "Portal Captação de Recursos - Página Inicial"
                             },
                             {
-                                src: "img/portfolio/full/2.jpg",
-                                alt: "Portal Captação de Recursos - Tela 2"
+                                src: "./img/portfolio/captacaoRecursos/cap-recursos-02.png",
+                                alt: "Portal Captação de Recursos - Dados do Projeto"
                             },
                             {
-                                src: "img/portfolio/full/3.jpg",
-                                alt: "Portal Captação de Recursos - Tela 3"
+                                src: "./img/portfolio/captacaoRecursos/cap-recursos-03.png ",
+                                alt: "Portal Captação de Recursos - Programas e assistências"
+                            },
+                            {
+                                src: "./img/portfolio/captacaoRecursos/cap-recursos-04.png",
+                                alt: "Portal Captação de Recursos - Carteira de Projetos"
                             }
                         ];
                         
@@ -311,7 +323,8 @@
                         <li><p><i class="fa fa-calendar"></i> Março, 2025</p></li>
                     </ul>
 
-                    <p class="text-justify">Aliquam euismod aliquam massa, quis eleifend dui sodales vitae. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                    <p class="text-justify">O site de Captação de Recursos  é uma plataforma desenvolvida para gerenciar e monitorar recursos financeiros destinados a projetos e iniciativas voltadas à saúde pública, garantindo transparência e eficiência na alocação dos fundos . 
+                        Sua principal função é facilitar a identificação de oportunidades de captação, como editais de financiamento, parcerias com agentes públicos e programas de custeio de ações</p>
                     <!-- /Project Description -->
 
                     <!-- Technology -->
@@ -329,8 +342,51 @@
                     </div>
                     <!-- /Technology -->
                 </div>
-                <!-- Project Description -->
+                
+                 
             </div>
+
+
+            <!-- Project Description -->
+            <div class="container">
+            <h2>Tarefas Desenvolvidas no sistema de Captação de Recursos</h2>
+            
+            <h4>Desenvolvimento em WordPress</h4>
+            <ul>
+                <li>Criação de uma plataforma intuitiva e escalável utilizando WordPress, explorando temas personalizados e plugins especializados (ex: formulários de captação, gestão de editais) para alinhar-se às estratégias de financiamento público e privado.</li> 
+                <li>Implementação de funcionalidades como seções de Editais, Parcerias e Controle de Recursos, priorizando navegação simplificada para gestores e interessados em oportunidades de financiamento.</li> 
+                <li>Domínio de técnicas de versionamento com Git para gerenciamento de atualizações e colaboração em equipe multidisciplinar.</li> 
+            </ul>
+            
+            <h4>Otimização para SEO e Performance</h4>
+            <ul>
+                <li>Aplicação de estratégias de SEO on-page (meta tags, URLs amigáveis).</li> 
+                <li>Otimização de performance com compressão de imagens, lazy loading e uso de CDN, garantindo carregamento rápido mesmo em conexões lentas.</li> 
+            </ul>
+                
+            
+            <h4>Aprendizados e Experiência Profissional Adquiridos</h4>
+            <ul>
+                <li>Domínio avançado de WordPress, incluindo customização de temas, integração com APIs externas (ex: plataformas de editais) e uso de frameworks como Elementor para agilidade no desenvolvimento.</li> 
+                <li>Resolução de desafios técnicos, como ajuste de layouts para navegadores antigos e otimização de recursos para usuários com baixa conectividade.</li> 
+                <li>Colaboração com gestores e equipes multidisciplinares para traduzir necessidades de captação em funcionalidades tecnológicas, utilizando metodologias ágeis e ferramentas como Trello para gestão de projetos.</li> 
+            </ul>
+            
+            <h4>Habilidades Técnicas Destacadas</h4>
+            <ul>
+                <li>WordPress (temas customizados, plugins)</li>
+                <li>SEO On-Page e Otimização de Performance</li>
+                <li>JetEngine Plugin</li>
+                <li>Elementor Plugin</li>
+                <li>Segurança em Plataformas de Captação de Recursos</li>
+                <li>Trabalho em Equipe Multidisciplinar</li>
+                <li>Governança Digital e Conformidade Legal</li>
+            </ul>
+            
+            <h4>Resultado</h4>
+            <p>Um portal moderno e funcional, que centraliza oportunidades de captação de recursos para projetos de saúde pública, facilitando acesso a editais, parcerias e controle financeiro. A plataforma impulsiona a eficiência na gestão de fundos e apoia decisões baseadas em transparência, contribuindo para a sustentabilidade de iniciativas sociais e públicas.</p> 
         </div>
+        </div>
+        
     </div>
 </div>
