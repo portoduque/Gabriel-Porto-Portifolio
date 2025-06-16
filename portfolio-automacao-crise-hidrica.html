@@ -14,290 +14,12 @@
             <h1>Automação crise hídrica</h1>
         </div>
 
-        <div class="row">
-            <div class="col-sm-8 col-md-8 portfolio-block">                <div class="owl-carousel portfolio-page-carousel">
-                    <div class="item">
-                        <img src="img/portfolio/full/1.jpg" alt="Automação Crise Hídrica - Tela 1" class="carousel-image" data-index="0" />
-                    </div>
-                    <div class="item">
-                        <img src="img/portfolio/full/2.jpg" alt="Automação Crise Hídrica - Tela 2" class="carousel-image" data-index="1" />
-                    </div>
-                    <div class="item">
-                        <img src="img/portfolio/full/3.jpg" alt="Automação Crise Hídrica - Tela 3" class="carousel-image" data-index="2" />
-                    </div>
-                </div>
-                
-                <!-- Lightbox Modal -->
-                <div id="lightbox-modal" class="lightbox-modal">
-                    <span class="lightbox-close">&times;</span>
-                    <img class="lightbox-content" id="lightbox-img">
-                    <div id="lightbox-caption"></div>
-                    
-                    <!-- Navegação do carousel no lightbox -->
-                    <a class="lightbox-prev" id="lightbox-prev">&#10094;</a>
-                    <a class="lightbox-next" id="lightbox-next">&#10095;</a>
-                    
-                    <!-- Indicadores de posição -->
-                    <div class="lightbox-indicators">
-                        <span class="lightbox-dot" data-slide="0"></span>
-                        <span class="lightbox-dot" data-slide="1"></span>
-                        <span class="lightbox-dot" data-slide="2"></span>
-                    </div>
-                </div>
-
+        <div class="row">            <div class="col-sm-8 col-md-8 portfolio-block">
                 <div class="portfolio-page-video embed-responsive embed-responsive-16by9">
                   <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/97102654?autoplay=0"></iframe>
-                </div>
-
-                <style> 
-                    /* Estilo do carrossel */
-                    .carousel-image {
-                        cursor: pointer;
-                        transition: transform 0.3s ease;
-                    }
-                    
-                    .carousel-image:hover {
-                        transform: scale(1.05);
-                    }
-                    
-                    /* Lightbox Modal */
-                    .lightbox-modal {
-                        display: none;
-                        position: fixed;
-                        z-index: 9999;
-                        padding-top: 100px;
-                        left: 0;
-                        top: 0;
-                        width: 100%;
-                        height: 100%;
-                        overflow: auto;
-                        background-color: rgba(0,0,0,0.9);
-                    }
-                    
-                    .lightbox-content {
-                        margin: auto;
-                        display: block;
-                        width: 80%;
-                        max-width: 1200px;
-                        max-height: 80vh;
-                        object-fit: contain;
-                        animation: zoom 0.6s;
-                    }
-                    
-                    @keyframes zoom {
-                        from {transform: scale(0)} 
-                        to {transform: scale(1)}
-                    }
-                    
-                    .lightbox-close {
-                        position: absolute;
-                        top: 60px;
-                        right: 35px;
-                        color: #f1f1f1;
-                        font-size: 40px;
-                        font-weight: bold;
-                        transition: 0.3s;
-                        cursor: pointer;
-                    }
-                    
-                    .lightbox-close:hover,
-                    .lightbox-close:focus {
-                        color: #bbb;
-                        text-decoration: none;
-                    }
-                    
-                    #lightbox-caption {
-                        margin: auto;
-                        display: block;
-                        width: 80%;
-                        max-width: 700px;
-                        text-align: center;
-                        color: #ccc;
-                        padding: 10px 0;
-                        height: 150px;
-                    }
-                    
-                    /* Navegação do lightbox */
-                    .lightbox-prev, .lightbox-next {
-                        cursor: pointer;
-                        position: absolute;
-                        top: 50%;
-                        width: auto;
-                        margin-top: -50px;
-                        padding: 16px;
-                        color: white;
-                        font-weight: bold;
-                        font-size: 30px;
-                        transition: 0.3s ease;
-                        border-radius: 0 3px 3px 0;
-                        user-select: none;
-                        background-color: rgba(0,0,0,0.5);
-                    }
-                    
-                    .lightbox-next {
-                        right: 20px;
-                        border-radius: 3px 0 0 3px;
-                    }
-                    
-                    .lightbox-prev {
-                        left: 20px;
-                    }
-                    
-                    .lightbox-prev:hover, .lightbox-next:hover {
-                        background-color: rgba(0,0,0,0.8);
-                        color: #02B4E0;
-                    }
-                    
-                    /* Indicadores */
-                    .lightbox-indicators {
-                        text-align: center;
-                        position: absolute;
-                        bottom: 30px;
-                        width: 100%;
-                    }
-                    
-                    .lightbox-dot {
-                        cursor: pointer;
-                        height: 15px;
-                        width: 15px;
-                        margin: 0 5px;
-                        background-color: #bbb;
-                        border-radius: 50%;
-                        display: inline-block;
-                        transition: background-color 0.3s ease;
-                    }
-                    
-                    .lightbox-dot.active, .lightbox-dot:hover {
-                        background-color: #02B4E0;
-                    }
-                    
-                    @media only screen and (max-width: 700px){
-                        .lightbox-content {
-                            width: 100%;
-                        }
-                        
-                        .lightbox-prev, .lightbox-next {
-                            font-size: 24px;
-                            padding: 12px;
-                        }
-                        
-                        .lightbox-prev {
-                            left: 10px;
-                        }
-                        
-                        .lightbox-next {
-                            right: 10px;
-                        }
-                    }
-                </style>                <script type="text/javascript">
-                    jQuery(document).ready(function($){
-                        $('.portfolio-page-carousel').imagesLoaded(function(){
-                            $('.portfolio-page-carousel').owlCarousel({
-                                smartSpeed:1200,
-                                items: 1,
-                                loop: true,
-                                dots: true,
-                                nav: true,
-                                navText: false,
-                                margin: 10,
-                                autoHeight:true
-                            });
-                        });
-                        
-                        // Array com as informações das imagens
-                        var images = [
-                            {
-                                src: "img/portfolio/full/1.jpg",
-                                alt: "Automação Crise Hídrica - Tela 1"
-                            },
-                            {
-                                src: "img/portfolio/full/2.jpg",
-                                alt: "Automação Crise Hídrica - Tela 2"
-                            },
-                            {
-                                src: "img/portfolio/full/3.jpg",
-                                alt: "Automação Crise Hídrica - Tela 3"
-                            }
-                        ];
-                        
-                        var currentSlide = 0;
-                        var modal = document.getElementById("lightbox-modal");
-                        var modalImg = document.getElementById("lightbox-img");
-                        var captionText = document.getElementById("lightbox-caption");
-                        var span = document.getElementsByClassName("lightbox-close")[0];
-                        var prevBtn = document.getElementById("lightbox-prev");
-                        var nextBtn = document.getElementById("lightbox-next");
-                        var dots = document.getElementsByClassName("lightbox-dot");
-                        
-                        // Função para mostrar slide específico
-                        function showSlide(n) {
-                            if (n >= images.length) { currentSlide = 0; }
-                            if (n < 0) { currentSlide = images.length - 1; }
-                            
-                            modalImg.src = images[currentSlide].src;
-                            captionText.innerHTML = images[currentSlide].alt;
-                            
-                            // Atualizar indicadores
-                            for (var i = 0; i < dots.length; i++) {
-                                dots[i].classList.remove("active");
-                            }
-                            dots[currentSlide].classList.add("active");
-                        }                        // Adicionar evento de clique para cada imagem do carrossel
-                        $('.carousel-image').click(function(){
-                            // Pegar o índice diretamente do atributo data-index
-                            var clickedIndex = parseInt($(this).attr('data-index'));
-                            currentSlide = clickedIndex;
-                            modal.style.display = "block";
-                            showSlide(currentSlide);
-                        });
-                        
-                        // Navegação anterior
-                        prevBtn.onclick = function() {
-                            currentSlide--;
-                            showSlide(currentSlide);
-                        }
-                        
-                        // Navegação próxima
-                        nextBtn.onclick = function() {
-                            currentSlide++;
-                            showSlide(currentSlide);
-                        }
-                        
-                        // Clique nos indicadores
-                        for (var i = 0; i < dots.length; i++) {
-                            dots[i].onclick = function() {
-                                currentSlide = parseInt(this.getAttribute("data-slide"));
-                                showSlide(currentSlide);
-                            }
-                        }
-                        
-                        // Fechar modal ao clicar no X
-                        span.onclick = function() { 
-                            modal.style.display = "none";
-                        }
-                        
-                        // Fechar modal ao clicar fora da imagem (mas não nos controles)
-                        modal.onclick = function(event) {
-                            if (event.target == modal) {
-                                modal.style.display = "none";
-                            }
-                        }
-                        
-                        // Navegação com teclado
-                        document.addEventListener('keydown', function(event) {
-                            if (modal.style.display === "block") {
-                                if (event.key === 'Escape') {
-                                    modal.style.display = "none";
-                                } else if (event.key === 'ArrowLeft') {
-                                    currentSlide--;
-                                    showSlide(currentSlide);
-                                } else if (event.key === 'ArrowRight') {
-                                    currentSlide++;
-                                    showSlide(currentSlide);
-                                }
-                            }
-                        });
-                    });
+                </div>                
+                <script type="text/javascript">
+                    // Nenhum JavaScript necessário para apenas vídeo
                 </script>
             </div>
 
@@ -313,7 +35,8 @@
                         <li><p><i class="fa fa-calendar"></i> Janeiro, 2025</p></li>
                     </ul>
 
-                    <p class="text-justify">Aliquam euismod aliquam massa, quis eleifend dui sodales vitae. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                    <p class="text-justify">O RPA automatiza a coleta diária de dados históricos de qualidade da água da ANA (Agência Nacional de Águas) via Selenium WebDriver, simulando interações humanas no navegador para acessar o site, aplicar filtros e baixar arquivos. 
+                        Após o download, organiza os arquivos em pastas predefinidas, garantindo disponibilidade para análises posteriores e reduzindo intervenção manual </p>
                     <!-- /Project Description -->
 
                     <!-- Technology -->
@@ -331,6 +54,110 @@
                 </div>
                 <!-- Project Description -->
             </div>
+
+            <style>
+
+
+            .container {
+                max-width: 900px;
+                margin: 40px auto;
+                padding: 30px;
+                background-color: #222222;
+                border-radius: 12px;
+            }
+
+            h1 {
+                color: #02B4E0;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            h2 {
+                color: #026a80;
+                border-bottom: 2px solid #02B4E0;
+                padding-bottom: 5px;
+                margin-top: 40px;
+            }
+
+            ul {
+                margin-left: 20px;
+                line-height: 1.8;
+            }
+
+            p {
+                line-height: 1.7;
+            }
+        </style>
+
+            <div class="container">
+
+            <h1>Automação de Coleta de Dados Hidrológicos com Python e Selenium</h1>
+
+            <h2>Visão Geral</h2>
+            <p>Este projeto consiste no desenvolvimento de uma <strong>solução automatizada para coleta diária de dados históricos de qualidade da água</strong>, disponibilizados pela <strong>Agência Nacional de Águas e Saneamento Básico (ANA)</strong>.</p>
+            <p>A automação foi implementada utilizando <strong>Python e Selenium WebDriver</strong>, permitindo a extração, organização e armazenamento dos dados de forma <strong>totalmente autônoma</strong>.</p>
+
+            <h2>Objetivo</h2>
+            <ul>
+                <li>Acessar o portal da ANA.</li>
+                <li>Filtrar dados hidrológicos por estação e período específico.</li>
+                <li>Realizar o download dos arquivos de dados.</li>
+                <li>Organizar os arquivos automaticamente em pastas locais pré-definidas.</li>
+            </ul>
+
+            <h2>Tecnologias Utilizadas</h2>
+            <ul>
+                <li><strong>Python</strong> – Lógica de programação e manipulação de arquivos.</li>
+                <li><strong>Selenium WebDriver</strong> – Automação de navegadores (Google Chrome).</li>
+                <li><strong>ChromeOptions</strong> – Configuração de download automático no navegador.</li>
+                <li><strong>WebDriverWait & Expected Conditions</strong> – Sincronização dinâmica com carregamento da página.</li>
+                <li><strong>Datetime</strong> – Manipulação de datas para filtros dinâmicos.</li>
+            </ul>
+
+            <h2>Estrutura do Projeto</h2>
+            <ul>
+                <li>Mapeamento de múltiplas <strong>estações hidrológicas</strong>.</li>
+                <li>Automação configurada para <strong>iterar automaticamente entre diferentes estações</strong>.</li>
+                <li>Aplicação de <strong>filtros de data dinâmicos</strong>.</li>
+                <li>Download e organização automática dos arquivos em <strong>diretórios separados por estação</strong>.</li>
+            </ul>
+
+            <h2>Principais Funcionalidades</h2>
+            <ul>
+                <li><strong>Acesso automatizado ao portal web da ANA</strong>.</li>
+                <li><strong>Navegação inteligente</strong> pelos menus da plataforma.</li>
+                <li><strong>Busca automática</strong> de estações por código.</li>
+                <li><strong>Aplicação dinâmica de filtros de data</strong>.</li>
+                <li><strong>Download e organização automática</strong> dos arquivos.</li>
+                <li>Execução sequencial para múltiplas estações com <strong>tratamento individual de falhas</strong>.</li>
+            </ul>
+
+            <h2>Habilidades Demonstradas</h2>
+            <ul>
+                <li>Automação de processos (RPA)</li>
+                <li>Web scraping avançado com Selenium</li>
+                <li>Manipulação dinâmica de elementos web</li>
+                <li>Gestão de arquivos e diretórios com Python</li>
+                <li>Aplicação de boas práticas de sincronização e tratamento de exceções</li>
+                <li>Otimização de processos repetitivos</li>
+                <li>Escrita de código escalável e reutilizável</li>
+                <li>Estruturação eficiente de dados</li>
+            </ul>
+
+            <h2>Impacto Gerado</h2>
+            <ul>
+                <li>Redução significativa de tempo e esforço na coleta diária de dados.</li>
+                <li>Eliminação de falhas manuais no processo de coleta.</li>
+                <li>Garantia de padronização e rastreabilidade das informações coletadas.</li>
+                <li>Arquitetura escalável e adaptável a novas estações ou parâmetros.</li>
+            </ul>
+
+            <h2>Conclusão</h2>
+            <div class="highlight">
+                O projeto demonstra domínio na identificação de processos manuais passíveis de automação, implementação de soluções eficientes com Python e Selenium, e criação de processos robustos, confiáveis e escaláveis.
+            </div>
+
+        </div>
         </div>
     </div>
 </div>
