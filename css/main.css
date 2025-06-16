@@ -1364,7 +1364,7 @@ input[type="text"],
 
 /* --- Skills Values --- */
 .skills-second-style .skill-container.skill-1 .skill-percentage {
-  width: 95%;
+  width: 90%;
 }
 
 .skills-second-style .skill-container.skill-2 .skill-percentage {
@@ -1384,15 +1384,15 @@ input[type="text"],
 }
 
 .skills-second-style .skill-container.skill-6 .skill-percentage {
-  width: 80%;
+  width: 50%;
 }
 
 .skills-second-style .skill-container.skill-7 .skill-percentage {
-  width: 90%;
+  width: 30%;
 }
 
 .skills-second-style .skill-container.skill-8 .skill-percentage {
-  width: 100%;
+  width: 80%;
 }
 
 .skills-second-style .skill-container.skill-9 .skill-percentage {
@@ -1400,7 +1400,11 @@ input[type="text"],
 }
 
 .skills-second-style .skill-container.skill-10 .skill-percentage {
-  width: 90%;
+  width: 100%;
+}
+
+.skills-second-style .skill-container.skill-11 .skill-percentage {
+  width: 70%;
 }
 
 /* --- End of Skills Values --- */
