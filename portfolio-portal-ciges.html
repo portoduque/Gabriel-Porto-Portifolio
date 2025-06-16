@@ -15,24 +15,224 @@
         </div>
 
         <div class="row">
-            <div class="col-sm-8 col-md-8 portfolio-block">
-                <div class="owl-carousel portfolio-page-carousel">
+            <div class="col-sm-8 col-md-8 portfolio-block">                <div class="owl-carousel portfolio-page-carousel">
                     <div class="item">
-                        <img src="img/portfolio/full/1.jpg" alt="" />
+                        <img src="./img/portfolio/PortalCiges/ciges 1.png" alt="Portal CIGES - Tela 1" class="carousel-image" data-index="0" />
                     </div>
                     <div class="item">
-                        <img src="img/portfolio/full/2.jpg" alt="" />
+                        <img src="./img/portfolio/PortalCiges/ciges 2.png" alt="Portal CIGES - Tela 2" class="carousel-image" data-index="1" />
                     </div>
                     <div class="item">
-                        <img src="img/portfolio/full/3.jpg" alt="" />
+                        <img src="./img/portfolio/PortalCiges/ciges 3.png" alt="Portal CIGES - Tela 3" class="carousel-image" data-index="2" />
                     </div>
                 </div>
+                
+                <!-- Lightbox Modal -->
+                <div id="lightbox-modal" class="lightbox-modal">
+                    <span class="lightbox-close">&times;</span>
+                    <img class="lightbox-content" id="lightbox-img">
+                    <div id="lightbox-caption"></div>
+                    
+                    <!-- Navegação do carousel no lightbox -->
+                    <a class="lightbox-prev" id="lightbox-prev">&#10094;</a>
+                    <a class="lightbox-next" id="lightbox-next">&#10095;</a>
+                    
+                    <!-- Indicadores de posição -->
+                    <div class="lightbox-indicators">
+                        <span class="lightbox-dot" data-slide="0"></span>
+                        <span class="lightbox-dot" data-slide="1"></span>
+                        <span class="lightbox-dot" data-slide="2"></span>
+                    </div>
+                </div>        <style> 
+            body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; padding: 20px; } 
+            h2 { padding: 30px 0px 10px 0px; } 
+            h4 { color: #02B4E0; padding: 30px 0px 7px 0px; } 
+            ul { list-style-type: disc; margin-left: 20px; }
+            
+            /* Estilo do carrossel */
+            .carousel-image {
+                cursor: pointer;
+                transition: transform 0.3s ease;
+            }
+            
+            .carousel-image:hover {
+                transform: scale(1.05);
+            }
+            
+            /* Lightbox Modal */
+            .lightbox-modal {
+                display: none;
+                position: fixed;
+                z-index: 9999;
+                padding-top: 100px;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgba(0,0,0,0.9);
+            }
+            
+            .lightbox-content {
+                margin: auto;
+                display: block;
+                width: 80%;
+                max-width: 1200px;
+                max-height: 80vh;
+                object-fit: contain;
+                animation: zoom 0.6s;
+            }
+            
+            @keyframes zoom {
+                from {transform: scale(0)} 
+                to {transform: scale(1)}
+            }
+            
+            .lightbox-close {
+                position: absolute;
+                top: 60px;
+                right: 35px;
+                color: #f1f1f1;
+                font-size: 40px;
+                font-weight: bold;
+                transition: 0.3s;
+                cursor: pointer;
+            }
+            
+            .lightbox-close:hover,
+            .lightbox-close:focus {
+                color: #bbb;
+                text-decoration: none;
+            }
+            
+            #lightbox-caption {
+                margin: auto;
+                display: block;
+                width: 80%;
+                max-width: 700px;
+                text-align: center;
+                color: #ccc;
+                padding: 10px 0;
+                height: 150px;
+            }
+            
+            /* Navegação do lightbox */
+            .lightbox-prev, .lightbox-next {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                margin-top: -50px;
+                padding: 16px;
+                color: white;
+                font-weight: bold;
+                font-size: 30px;
+                transition: 0.3s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+                background-color: rgba(0,0,0,0.5);
+            }
+            
+            .lightbox-next {
+                right: 20px;
+                border-radius: 3px 0 0 3px;
+            }
+            
+            .lightbox-prev {
+                left: 20px;
+            }
+            
+            .lightbox-prev:hover, .lightbox-next:hover {
+                background-color: rgba(0,0,0,0.8);
+                color: #02B4E0;
+            }
+            
+            /* Indicadores */
+            .lightbox-indicators {
+                text-align: center;
+                position: absolute;
+                bottom: 30px;
+                width: 100%;
+            }
+            
+            .lightbox-dot {
+                cursor: pointer;
+                height: 15px;
+                width: 15px;
+                margin: 0 5px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.3s ease;
+            }
+            
+            .lightbox-dot.active, .lightbox-dot:hover {
+                background-color: #02B4E0;
+            }
+            
+            @media only screen and (max-width: 700px){
+                .lightbox-content {
+                    width: 100%;
+                }
+                
+                .lightbox-prev, .lightbox-next {
+                    font-size: 24px;
+                    padding: 12px;
+                }
+                
+                .lightbox-prev {
+                    left: 10px;
+                }
+                
+                .lightbox-next {
+                    right: 10px;
+                }
+            }
+        </style>
 
-                <div class="portfolio-page-video embed-responsive embed-responsive-16by9">
-                  <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/97102654?autoplay=0"></iframe>
-                </div>
-
-                <script type="text/javascript">
+        <div class="container">
+            <h2>Tarefas Desenvolvidas no portal do CIGES</h2>
+            
+            <h4>Implementação da Interface do Usuário (UI)</h4>
+            <ul>
+                <li>Desenvolvi layouts responsivos e intuitivos utilizando HTML5, CSS3 e JavaScript, alinhados à estrutura semântica recomendada pelo MDN.</li> 
+                <li>Criação de dashboards interativos para visualização de indicadores de saúde pública, com gráficos dinâmicos e filtros de dados personalizados via JavaScript Vanilla.</li>
+                <li>Garantia de acessibilidade e legibilidade para gestores de saúde, seguindo diretrizes do W3C para interfaces inclusivas.</li> 
+            </ul>
+            
+            <h4>Otimização para Dispositivos Móveis</h4>
+            <ul>
+                <li>Uso de media queries, CSS Grid/Flexbox e Bootstrap para garantir compatibilidade em smartphones e tablets, priorizando a usabilidade em ambientes corporativos.</li>
+                <li>Testes de responsividade em navegadores Chrome, Firefox e Edge, assegurando experiência consistente para usuários.</li> 
+            </ul>
+                    
+            <h4>Colaboração com a Equipe Multidisciplinar</h4>
+            <ul>
+                <li>Integração com APIs REST da equipe backend da SETIC - RO, priorizando segurança e eficiência na troca de dados estratégicos de saúde</li> 
+                <li>Participação em reuniões de alinhamento para validar requisitos técnicos e institucionais, garantindo conformidade com as diretrizes da SESAU.</li>
+                <li>Trabalho conjunto com designers para padronizar estilos e garantir interface alinhada às normas de governança digital do portal.</li>
+            </ul>
+            
+            <h4>Aprendizados e Experiência Profissional Adquiridos</h4>
+            <ul>
+                <li>Domínio avançado de Bootstrap, JavaScript e técnicas de otimização de performance web para plataformas de alto impacto social.</li>
+                <li>Resolução de desafios técnicos, como ajuste de layouts para navegadores antigos e integração segura de APIs REST com autenticação OAuth.</li>
+                <li>Gerenciamento de prazos rigorosos em projeto crítico, equilibrando qualidade técnica e entregas ágeis sob pressão.</li>
+            </ul>
+            
+            <h4>Habilidades Técnicas Destacadas</h4>
+            <ul>
+                <li>Frontend (HTML5, CSS3, JavaScript)</li>
+                <li>Responsive Design e Acessibilidade</li>
+                <li>Otimização de Performance</li>
+                <li>Integração de APIs REST</li>
+                <li>Trabalho em Equipe Multidisciplinar</li>
+                <li>Soluções para Governança Digital e Saúde Pública</li>
+            </ul>
+            
+            <h4>Resultado</h4>
+            <p>Um portal moderno, acessível e funcional, que centraliza dados críticos de saúde pública, facilitando decisões baseadas em evidências para a SESAU em Rondônia. A plataforma permite análise de tendências, monitoramento de indicadores e comparações regionais, apoiando gestores na alocação eficiente de recursos</p> 
+        </div>                <script type="text/javascript">
                     jQuery(document).ready(function($){
                         $('.portfolio-page-carousel').imagesLoaded(function(){
                             $('.portfolio-page-carousel').owlCarousel({
@@ -45,6 +245,100 @@
                                 margin: 10,
                                 autoHeight:true
                             });
+                        });
+                        
+                        // Array com as informações das imagens
+                        var images = [
+                            {
+                                src: "./img/portfolio/PortalCiges/ciges 1.png",
+                                alt: "Portal CIGES - Tela 1"
+                            },
+                            {
+                                src: "./img/portfolio/PortalCiges/ciges 2.png",
+                                alt: "Portal CIGES - Tela 2"
+                            },
+                            {
+                                src: "./img/portfolio/PortalCiges/ciges 3.png",
+                                alt: "Portal CIGES - Tela 3"
+                            }
+                        ];
+                        
+                        var currentSlide = 0;
+                        var modal = document.getElementById("lightbox-modal");
+                        var modalImg = document.getElementById("lightbox-img");
+                        var captionText = document.getElementById("lightbox-caption");
+                        var span = document.getElementsByClassName("lightbox-close")[0];
+                        var prevBtn = document.getElementById("lightbox-prev");
+                        var nextBtn = document.getElementById("lightbox-next");
+                        var dots = document.getElementsByClassName("lightbox-dot");
+                        
+                        // Função para mostrar slide específico
+                        function showSlide(n) {
+                            if (n >= images.length) { currentSlide = 0; }
+                            if (n < 0) { currentSlide = images.length - 1; }
+                            
+                            modalImg.src = images[currentSlide].src;
+                            captionText.innerHTML = images[currentSlide].alt;
+                            
+                            // Atualizar indicadores
+                            for (var i = 0; i < dots.length; i++) {
+                                dots[i].classList.remove("active");
+                            }
+                            dots[currentSlide].classList.add("active");
+                        }                        // Adicionar evento de clique para cada imagem do carrossel
+                        $('.carousel-image').click(function(){
+                            // Pegar o índice diretamente do atributo data-index
+                            var clickedIndex = parseInt($(this).attr('data-index'));
+                            currentSlide = clickedIndex;
+                            modal.style.display = "block";
+                            showSlide(currentSlide);
+                        });
+                        
+                        // Navegação anterior
+                        prevBtn.onclick = function() {
+                            currentSlide--;
+                            showSlide(currentSlide);
+                        }
+                        
+                        // Navegação próxima
+                        nextBtn.onclick = function() {
+                            currentSlide++;
+                            showSlide(currentSlide);
+                        }
+                        
+                        // Clique nos indicadores
+                        for (var i = 0; i < dots.length; i++) {
+                            dots[i].onclick = function() {
+                                currentSlide = parseInt(this.getAttribute("data-slide"));
+                                showSlide(currentSlide);
+                            }
+                        }
+                        
+                        // Fechar modal ao clicar no X
+                        span.onclick = function() { 
+                            modal.style.display = "none";
+                        }
+                        
+                        // Fechar modal ao clicar fora da imagem (mas não nos controles)
+                        modal.onclick = function(event) {
+                            if (event.target == modal) {
+                                modal.style.display = "none";
+                            }
+                        }
+                        
+                        // Navegação com teclado
+                        document.addEventListener('keydown', function(event) {
+                            if (modal.style.display === "block") {
+                                if (event.key === 'Escape') {
+                                    modal.style.display = "none";
+                                } else if (event.key === 'ArrowLeft') {
+                                    currentSlide--;
+                                    showSlide(currentSlide);
+                                } else if (event.key === 'ArrowRight') {
+                                    currentSlide++;
+                                    showSlide(currentSlide);
+                                }
+                            }
                         });
                     });
                 </script>
@@ -62,7 +356,8 @@
                         <li><p><i class="fa fa-calendar"></i> janeiro, 2025</p></li>
                     </ul>
 
-                    <p class="text-justify">Aliquam euismod aliquam massa, quis eleifend dui sodales vitae. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                    <p class="text-justify">O site Painel CIGES  é uma plataforma digital que centraliza dados estratégicos de saúde para apoiar a gestão do Sistema Único de Saúde (SUS) em Rondônia. 
+                        Ele oferece relatórios detalhados, indicadores de saúde, análises estratégicas e ferramentas de visualização de dados, permitindo que gestores, pesquisadores e profissionais de saúde tomem decisões baseadas em evidências</p>
                     <!-- /Project Description -->
 
                     <!-- Technology -->
@@ -73,6 +368,7 @@
                         <ul class="tags">
                             <li><a>HTML5</a></li>
                             <li><a>CSS3</a></li>
+                            <li><a>Javascript</a></li>
                             <li><a>C#</a></li>
                             <li><a>Dotnet</a></li>
                             <li><a>Bootstrap</a></li>
