@@ -199,24 +199,6 @@ Sugestões e melhorias são sempre bem-vindas! Sinta-se à vontade para:
 4. 📤 Push para a branch (`git push origin feature/AmazingFeature`)
 5. 🔄 Abrir um Pull Request
 
----
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
----
-
-## 🎯 Roadmap
-
-- [ ] 🌙 Implementar modo escuro
-- [ ] 🌍 Adicionar versão em inglês
-- [ ] 📈 Integrar Google Analytics
-- [ ] 💬 Adicionar seção de blog
-- [ ] 🔄 Implementar PWA
-- [ ] 📊 Dashboard de métricas
-
----
 
 <div align="center">
 
@@ -224,8 +206,17 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 **Desenvolvido com ❤️ por Gabriel Porto**
 
-![Visitors](https://visitor-badge.laobi.icu/badge?page_id=portoduque.portfolio)
-![GitHub last commit](https://img.shields.io/github/last-commit/portoduque/portfolio?style=flat-square)
+<!-- Badges dinâmicos - Funcionam automaticamente -->
+
+<!-- Badge de visitantes - Funciona quando hospedado online -->
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=portoduque.Gabriel-Porto-Resume-CV-Portifolio)
+
+<!-- Badge de última atualização - Atualiza automaticamente com commits -->
+![GitHub last commit](https://img.shields.io/github/last-commit/portoduque/Gabriel-Porto-Resume-CV-Portifolio?style=flat-square)
+
+<!-- Badges informativos -->
+![Maintained](https://img.shields.io/badge/Maintained-Yes-green?style=flat-square)
+![GitHub repo size](https://img.shields.io/github/repo-size/portoduque/Gabriel-Porto-Resume-CV-Portifolio?style=flat-square)
 
 </div>
 
