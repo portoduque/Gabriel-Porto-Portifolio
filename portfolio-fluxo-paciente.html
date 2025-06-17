@@ -11,19 +11,25 @@
         </div>
 
         <div class="ajax-page-title">
-            <h1>Sistema Fluxo Transporte Paciente</h1>
+            <h1>Sistema de Gestão de Transporte de Pacientes</h1>
         </div>
 
         <div class="row">
             <div class="col-sm-8 col-md-8 portfolio-block">                <div class="owl-carousel portfolio-page-carousel">
                     <div class="item">
-                        <img src="img/portfolio/full/1.jpg" alt="Fluxo Paciente - Tela 1" class="carousel-image" data-index="0" />
+                        <img src="./img/portfolio/FluxoTP/1 - fluxotp.png" alt="Fluxo Paciente - Listagem transporte" class="carousel-image" data-index="0" />
                     </div>
                     <div class="item">
-                        <img src="img/portfolio/full/2.jpg" alt="Fluxo Paciente - Tela 2" class="carousel-image" data-index="1" />
+                        <img src="./img/portfolio/FluxoTP/2 - fluxotp.png" alt="Fluxo Paciente - Cadastro transporte" class="carousel-image" data-index="1" />
                     </div>
                     <div class="item">
-                        <img src="img/portfolio/full/3.jpg" alt="Fluxo Paciente - Tela 3" class="carousel-image" data-index="2" />
+                        <img src="./img/portfolio/FluxoTP/3 - fluxotp.png" alt="Fluxo Paciente - Listagem paciente" class="carousel-image" data-index="2" />
+                    </div>
+                    <div class="item">
+                        <img src="./img/portfolio/FluxoTP/4 - fluxotp.png" alt="Fluxo Paciente - Unidade solicitante" class="carousel-image" data-index="3" />
+                    </div>
+                    <div class="item">
+                        <img src="./img/portfolio/FluxoTP/5 - fluxotp.png" alt="Fluxo Paciente - Listagem viagem" class="carousel-image" data-index="4" />
                     </div>
                 </div>
                 
@@ -36,17 +42,59 @@
                     <!-- Navegação do carousel no lightbox -->
                     <a class="lightbox-prev" id="lightbox-prev">&#10094;</a>
                     <a class="lightbox-next" id="lightbox-next">&#10095;</a>
-                    
-                    <!-- Indicadores de posição -->
+                      <!-- Indicadores de posição -->
                     <div class="lightbox-indicators">
                         <span class="lightbox-dot" data-slide="0"></span>
                         <span class="lightbox-dot" data-slide="1"></span>
                         <span class="lightbox-dot" data-slide="2"></span>
+                        <span class="lightbox-dot" data-slide="3"></span>
+                        <span class="lightbox-dot" data-slide="4"></span>
                     </div>
                 </div>
 
 
                 <style> 
+
+                    /* Estilo do corpo do texto */
+                    .container {
+                        max-width: 900px;
+                        margin: 40px auto;
+                        padding: 30px;
+                        background-color: #222222;
+                        border-radius: 12px;
+                    }
+
+                    h1 {
+                        color: #02B4E0;
+                        text-align: center;
+                        margin-bottom: 30px;
+                    }
+
+                    h2 {
+                        color: #026a80;
+                        border-bottom: 2px solid #02B4E0;
+                        padding-bottom: 5px;
+                        margin-top: 40px;
+                    }
+
+                    ul {
+                        margin-left: 20px;
+                        line-height: 1.8;
+                    }
+
+                    p {
+                        line-height: 1.7;
+                    }
+
+                    .highlight {
+                        background-color: #333333;
+                        padding: 15px;
+                        border-radius: 8px;
+                        margin-top: 20px;
+                        color: #ffffff;
+                        font-weight: bold;
+                        text-align: center;
+                    }
                     /* Estilo do carrossel */
                     .carousel-image {
                         cursor: pointer;
@@ -200,20 +248,27 @@
                                 autoHeight:true
                             });
                         });
-                        
-                        // Array com as informações das imagens
+                          // Array com as informações das imagens
                         var images = [
                             {
-                                src: "img/portfolio/full/1.jpg",
-                                alt: "Fluxo Paciente - Tela 1"
+                                src: "./img/portfolio/FluxoTP/1 - fluxotp.png",
+                                alt: "Fluxo Paciente - Listagem transporte"
                             },
                             {
-                                src: "img/portfolio/full/2.jpg",
-                                alt: "Fluxo Paciente - Tela 2"
+                                src: "./img/portfolio/FluxoTP/2 - fluxotp.png",
+                                alt: "Fluxo Paciente - Cadastro transporte"
                             },
                             {
-                                src: "img/portfolio/full/3.jpg",
-                                alt: "Fluxo Paciente - Tela 3"
+                                src: "./img/portfolio/FluxoTP/3 - fluxotp.png",
+                                alt: "Fluxo Paciente - Listagem paciente"
+                            },
+                            {
+                                src: "./img/portfolio/FluxoTP/4 - fluxotp.png",
+                                alt: "Fluxo Paciente - Unidade solicitante"
+                            },
+                            {
+                                src: "./img/portfolio/FluxoTP/5 - fluxotp.png",
+                                alt: "Fluxo Paciente - Listagem viagem"
                             }
                         ];
                         
@@ -311,7 +366,7 @@
                         <li><p><i class="fa fa-calendar"></i> Junho, 2025</p></li>
                     </ul>
 
-                    <p class="text-justify">Aliquam euismod aliquam massa, quis eleifend dui sodales vitae. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                    <p class="text-justify">Sistema web completo para gerenciamento de fluxo de transporte inter-hospitalar, desenvolvido com arquitetura robusta e integração multi-plataforma. Solução que revoluciona a logística de transferência de pacientes entre cidades e unidades de saúde através de automação inteligente e comunicação em tempo real.</p>
                     <!-- /Project Description -->
 
                     <!-- Technology -->
@@ -330,6 +385,54 @@
                 </div>
                 <!-- Project Description -->
             </div>
+
+
+            <div class="container">
+
+                <!-- <h1>Sistema de Gestão de Transporte de Pacientes</h1> -->
+
+                <h2>Visão Geral</h2>
+                <p>Solução web para gestão de transporte inter-hospitalar de pacientes, com foco em logística otimizada, comunicação em tempo real e integração multi-plataforma. Projeto desenvolvido utilizando o framework PHP <strong>Madbuilder</strong>.</p>
+
+                <h2>Principais Funcionalidades</h2>
+                <ul>
+                    <li>Workflow automatizado de solicitações e transporte de pacientes</li>
+                    <li>Roteamento otimizado com cálculo de distâncias e tempos entre hospitais</li>
+                    <li>Notificações e atualizações via WhatsApp API</li>
+                    <li>Integração multi-hospitalar com sincronização de dados em tempo real</li>
+                    <li>Builder visual proprietário para gerenciamento e versionamento do banco de dados</li>
+                </ul>
+
+                <h2>Stack Tecnológica</h2>
+                <ul>
+                    <li>PHP com <strong>Madbuilder</strong> (baseado no Adianti Framework)</li>
+                    <li>Arquitetura MVC e APIs RESTful</li>
+                    <li>Frontend com Material Design e JavaScript otimizado</li>
+                    <li>Integração com WhatsApp API e ViaCEP</li>
+                    <li>Compatível com PostgreSQL, MySQL e MariaDB</li>
+                </ul>
+
+                <h2>Diferenciais Técnicos</h2>
+                <ul>
+                    <li>Builder visual proprietário para migração e versionamento de banco</li>
+                    <li>Integração com sistemas hospitalares (HL7/FHIR)</li>
+                    <li>Microserviços escaláveis com cache distribuído</li>
+                    <li>Segurança avançada com controle de permissões e conformidade com LGPD</li>
+                </ul>
+
+                <h2>Resultados Alcançados</h2>
+                <ul>
+                    <li>Redução de 40% no tempo de organização de transferências</li>
+                    <li>Otimização de 30% nos custos de transporte</li>
+                    <li>Comunicação em tempo real com pacientes e equipes médicas</li>
+                </ul>
+
+                <div class="highlight">
+                    Solução robusta que impulsiona a eficiência e transforma a logística de transporte de pacientes no setor de saúde.
+                </div>
+
+            </div>
+            </div>  
         </div>
     </div>
 </div>
