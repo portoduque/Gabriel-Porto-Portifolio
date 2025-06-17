@@ -43,12 +43,50 @@
                         <span class="lightbox-dot" data-slide="1"></span>
                         <span class="lightbox-dot" data-slide="2"></span>
                     </div>
-                </div>        <style> 
-            body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; padding: 20px; } 
-            h2 { padding: 30px 0px 10px 0px; } 
-            h4 { color: #02B4E0; padding: 30px 0px 7px 0px; } 
-            ul { list-style-type: disc; margin-left: 20px; }
-            
+                </div>        
+                
+            <style> 
+
+                    /* Estilo do corpo do texto */
+                    .container {
+                        max-width: 900px;
+                        margin: 40px auto;
+                        padding: 30px;
+                        background-color: #222222;
+                        border-radius: 12px;
+                    }
+
+                    h1 {
+                        color: #02B4E0;
+                        text-align: center;
+                        margin-bottom: 30px;
+                    }
+
+                    h2 {
+                        color: #026a80;
+                        border-bottom: 2px solid #02B4E0;
+                        padding-bottom: 5px;
+                        margin-top: 40px;
+                    }
+
+                    ul {
+                        margin-left: 20px;
+                        line-height: 1.8;
+                    }
+
+                    p {
+                        line-height: 1.7;
+                    }
+
+                    .highlight {
+                        background-color: #333333;
+                        padding: 15px;
+                        border-radius: 8px;
+                        margin-top: 20px;
+                        color: #ffffff;
+                        font-weight: bold;
+                        text-align: center;
+                    }
             /* Estilo do carrossel */
             .carousel-image {
                 cursor: pointer;
@@ -190,49 +228,8 @@
             }
         </style>
 
-        <div class="container">
-            <h2>Tarefas Desenvolvidas no portal do CIGES</h2>
             
-            <h4>Implementação da Interface do Usuário (UI)</h4>
-            <ul>
-                <li>Desenvolvi layouts responsivos e intuitivos utilizando HTML5, CSS3 e JavaScript, alinhados à estrutura semântica recomendada pelo MDN.</li> 
-                <li>Criação de dashboards interativos para visualização de indicadores de saúde pública, com gráficos dinâmicos e filtros de dados personalizados via JavaScript Vanilla.</li>
-                <li>Garantia de acessibilidade e legibilidade para gestores de saúde, seguindo diretrizes do W3C para interfaces inclusivas.</li> 
-            </ul>
-            
-            <h4>Otimização para Dispositivos Móveis</h4>
-            <ul>
-                <li>Uso de media queries, CSS Grid/Flexbox e Bootstrap para garantir compatibilidade em smartphones e tablets, priorizando a usabilidade em ambientes corporativos.</li>
-                <li>Testes de responsividade em navegadores Chrome, Firefox e Edge, assegurando experiência consistente para usuários.</li> 
-            </ul>
-                    
-            <h4>Colaboração com a Equipe Multidisciplinar</h4>
-            <ul>
-                <li>Integração com APIs REST da equipe backend da SETIC - RO, priorizando segurança e eficiência na troca de dados estratégicos de saúde</li> 
-                <li>Participação em reuniões de alinhamento para validar requisitos técnicos e institucionais, garantindo conformidade com as diretrizes da SESAU.</li>
-                <li>Trabalho conjunto com designers para padronizar estilos e garantir interface alinhada às normas de governança digital do portal.</li>
-            </ul>
-            
-            <h4>Aprendizados e Experiência Profissional Adquiridos</h4>
-            <ul>
-                <li>Domínio avançado de Bootstrap, JavaScript e técnicas de otimização de performance web para plataformas de alto impacto social.</li>
-                <li>Resolução de desafios técnicos, como ajuste de layouts para navegadores antigos e integração segura de APIs REST com autenticação OAuth.</li>
-                <li>Gerenciamento de prazos rigorosos em projeto crítico, equilibrando qualidade técnica e entregas ágeis sob pressão.</li>
-            </ul>
-            
-            <h4>Habilidades Técnicas Destacadas</h4>
-            <ul>
-                <li>Frontend (HTML5, CSS3, JavaScript)</li>
-                <li>Responsive Design e Acessibilidade</li>
-                <li>Otimização de Performance</li>
-                <li>Integração de APIs REST</li>
-                <li>Trabalho em Equipe Multidisciplinar</li>
-                <li>Soluções para Governança Digital e Saúde Pública</li>
-            </ul>
-            
-            <h4>Resultado</h4>
-            <p>Um portal moderno, acessível e funcional, que centraliza dados críticos de saúde pública, facilitando decisões baseadas em evidências para a SESAU em Rondônia. A plataforma permite análise de tendências, monitoramento de indicadores e comparações regionais, apoiando gestores na alocação eficiente de recursos</p> 
-        </div>                <script type="text/javascript">
+        <script type="text/javascript">
                     jQuery(document).ready(function($){
                         $('.portfolio-page-carousel').imagesLoaded(function(){
                             $('.portfolio-page-carousel').owlCarousel({
@@ -378,6 +375,64 @@
                 </div>
                 <!-- Project Description -->
             </div>
+            <div class="container">
+
+            <h1>Portal CIGES – Desenvolvimento Frontend Responsivo</h1>
+
+            <h2>Visão Geral</h2>
+            <p>Este projeto consistiu no <strong>desenvolvimento e otimização da interface do portal CIGES</strong>, plataforma estratégica para centralização de dados de saúde pública do estado de Rondônia.</p>
+            <p>Foi priorizada a criação de <strong>interfaces acessíveis, responsivas e com dashboards dinâmicos</strong>, alinhados às normas de governança digital e às necessidades institucionais da SESAU.</p>
+
+            <h2>Tarefas Desenvolvidas</h2>
+            <ul>
+                <li><strong>Desenvolvimento de layouts responsivos e semânticos</strong> com HTML5, CSS3 e JavaScript.</li>
+                <li><strong>Criação de dashboards interativos</strong> para visualização de indicadores de saúde pública com gráficos dinâmicos e filtros personalizados.</li>
+                <li><strong>Garantia de acessibilidade e legibilidade</strong> conforme diretrizes do W3C.</li>
+            </ul>
+
+            <h2>Otimização para Dispositivos Móveis</h2>
+            <ul>
+                <li><strong>Uso de media queries, CSS Grid/Flexbox e Bootstrap</strong> para garantir usabilidade em smartphones e tablets.</li>
+                <li><strong>Testes de responsividade e compatibilidade</strong> nos navegadores Chrome, Firefox e Edge.</li>
+            </ul>
+
+            <h2>Colaboração Multidisciplinar</h2>
+            <ul>
+                <li><strong>Integração com APIs REST</strong> da equipe backend da SETIC - RO, priorizando segurança e eficiência.</li>
+                <li><strong>Participação em reuniões de alinhamento</strong> para validação de requisitos técnicos e institucionais.</li>
+                <li><strong>Colaboração com designers</strong> para padronização visual e conformidade com as normas de governança digital.</li>
+            </ul>
+
+            <h2>Habilidades e Conhecimentos Adquiridos</h2>
+            <ul>
+                <li>Domínio avançado de <strong>Bootstrap, JavaScript Vanilla</strong> e otimização de performance web.</li>
+                <li>Resolução de desafios como <strong>compatibilidade com navegadores antigos</strong> e integração segura de APIs REST com autenticação OAuth.</li>
+                <li>Gestão de prazos rigorosos em projeto crítico, com foco em qualidade técnica e agilidade.</li>
+            </ul>
+
+            <h2>Habilidades Técnicas Demonstradas</h2>
+            <ul>
+                <li>Frontend (HTML5, CSS3, JavaScript)</li>
+                <li>Responsive Design e Acessibilidade</li>
+                <li>Otimização de Performance</li>
+                <li>Integração de APIs REST</li>
+                <li>Trabalho em Equipe Multidisciplinar</li>
+                <li>Soluções para Governança Digital e Saúde Pública</li>
+            </ul>
+
+            <h2>Impacto Gerado</h2>
+            <ul>
+                <li>Criação de um <strong>portal moderno, acessível e funcional</strong> que centraliza dados críticos de saúde pública.</li>
+                <li>Facilitação de <strong>decisões baseadas em evidências</strong> para a SESAU em Rondônia.</li>
+                <li>Suporte a <strong>análise de tendências e comparações regionais</strong> para otimizar a alocação de recursos.</li>
+            </ul>
+
+            <h2>Conclusão</h2>
+            <div class="highlight">
+                O projeto destacou habilidades avançadas no desenvolvimento de interfaces responsivas e colaborativas, contribuindo diretamente para a gestão de dados estratégicos de saúde pública no estado.
+            </div>
+
+        </div>
         </div>
     </div>
 </div>
