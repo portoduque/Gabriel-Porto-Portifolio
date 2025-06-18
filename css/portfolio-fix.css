@@ -1,0 +1,160 @@
+/* Portfolio Filter ONLY - Clean Override */
+
+/* Enhanced Portfolio Filters - Modern Pill Design */
+.portfolio-filters {
+    margin-bottom: 40px !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 12px !important;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05)) !important;
+    padding: 20px 30px !important;
+    border-radius: 25px !important;
+    backdrop-filter: blur(15px) !important;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.portfolio-filters::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(4, 180, 224, 0.1), transparent);
+    animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+.portfolio-filters li {
+    display: inline-block !important;
+    margin: 0 !important;
+    opacity: 1 !important;
+    position: relative !important;
+    font-size: initial !important;
+}
+
+.portfolio-filters li a {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    padding: 14px 28px !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 2px solid rgba(4, 180, 224, 0.15) !important;
+    border-radius: 30px !important;
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.8px !important;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    text-decoration: none !important;
+    position: relative !important;
+    overflow: hidden !important;
+    cursor: pointer !important;
+}
+
+.portfolio-filters li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+    transition: left 0.6s ease;
+}
+
+.portfolio-filters li a:hover::before {
+    left: 100%;
+}
+
+.portfolio-filters li a:hover {
+    background: rgba(4, 180, 224, 0.2) !important;
+    border-color: rgba(4, 180, 224, 0.6) !important;
+    color: #04b4e0 !important;
+    transform: translateY(-3px) scale(1.05) !important;
+    box-shadow: 0 8px 25px rgba(4, 180, 224, 0.3) !important;
+}
+
+.portfolio-filters li.active a {
+    background: linear-gradient(135deg, #04b4e0, #0396c7, #025a7a) !important;
+    border-color: #04b4e0 !important;
+    color: #ffffff !important;
+    box-shadow: 0 8px 25px rgba(4, 180, 224, 0.5),
+        0 0 20px rgba(4, 180, 224, 0.3) !important;
+    transform: translateY(-2px) scale(1.02) !important;
+    position: relative;
+}
+
+.portfolio-filters li.active a::before {
+    display: none;
+}
+
+.portfolio-filters li.active a::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #04b4e0, #0396c7, #04b4e0, #025a7a);
+    background-size: 300% 300%;
+    border-radius: 32px;
+    z-index: -1;
+    animation: gradientMove 2s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.portfolio-filters li a i {
+    font-size: 16px !important;
+    transition: transform 0.3s ease !important;
+    margin-right: 8px !important;
+    flex-shrink: 0 !important;
+}
+
+.portfolio-filters li a:hover i {
+    transform: scale(1.2) rotate(5deg);
+}
+
+.portfolio-filters li.active a i {
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
