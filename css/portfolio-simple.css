@@ -1,0 +1,353 @@
+/* Simple and Direct Portfolio Styles - Hybrid version */
+
+/* Force override any existing styles */
+.portfolio-grid.modern-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)) !important;
+    gap: 25px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    position: relative !important;
+    z-index: 10 !important;
+}
+
+/* Support both figure and article for compatibility */
+.portfolio-grid figure.portfolio-item,
+.portfolio-grid .portfolio-item {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: relative !important;
+    background: linear-gradient(145deg, #4a4a4a, #3a3a3a) !important;
+    border-radius: 15px !important;
+    overflow: hidden !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3) !important;
+    transition: all 0.3s ease !important;
+    cursor: pointer !important;
+    width: 100% !important;
+    float: none !important;
+    transform: none !important;
+    left: auto !important;
+    top: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Force visibility for shuffle.js compatibility */
+.portfolio-grid figure.portfolio-item,
+.portfolio-grid .portfolio-item {
+    visibility: visible !important;
+    opacity: 1 !important;
+    transform: none !important;
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    display: block !important;
+}
+
+/* Ensure shuffle.js doesn't hide our items */
+.portfolio-grid figure.portfolio-item.concealed,
+.portfolio-grid .portfolio-item.concealed {
+    visibility: visible !important;
+    opacity: 1 !important;
+    display: block !important;
+}
+
+/* Override shuffle.js positioning */
+.portfolio-grid.modern-grid figure.portfolio-item,
+.portfolio-grid.modern-grid .portfolio-item {
+    position: relative !important;
+    float: none !important;
+    left: auto !important;
+    top: auto !important;
+    transform: none !important;
+    transition: all 0.3s ease !important;
+}
+
+/* Fix for when shuffle.js tries to manage layout */
+.portfolio-grid.modern-grid {
+    height: auto !important;
+}
+
+/* Make sure new structure overrides old one */
+.portfolio-grid.modern-grid .portfolio-item {
+    z-index: 2 !important;
+}
+
+/* Hide original portfolio structure if exists */
+.portfolio-grid figure:not(.portfolio-item) {
+    display: none !important;
+}
+
+.portfolio-grid figure.portfolio-item:hover,
+.portfolio-grid .portfolio-item:hover {
+    transform: translateY(-8px) !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4) !important;
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Portfolio Item Image */
+.portfolio-item-img {
+    position: relative;
+    height: 180px;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+}
+
+.portfolio-item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-item-img img {
+    transform: scale(1.08);
+}
+
+/* Portfolio Overlay */
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(4, 180, 224, 0.9), rgba(4, 180, 224, 0.7));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+    border-radius: 15px 15px 0 0;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+.portfolio-overlay-content {
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
+
+.portfolio-tech {
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+    opacity: 0.9;
+}
+
+.portfolio-view-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 18px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid white;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    font-size: 13px;
+}
+
+.portfolio-view-btn:hover {
+    background: white;
+    color: #04b4e0;
+    transform: translateY(-2px);
+}
+
+/* Portfolio Item Info */
+.portfolio-item-info {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-category {
+    margin-bottom: 12px;
+}
+
+.category-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.category-badge.web {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+}
+
+.category-badge.python {
+    background: linear-gradient(135deg, #3776ab, #ffd43b);
+    color: #2d5aa0;
+}
+
+.category-badge.php {
+    background: linear-gradient(135deg, #8892bf, #4f5b93);
+    color: white;
+}
+
+.category-badge.wordpress {
+    background: linear-gradient(135deg, #21759b, #464646);
+    color: white;
+}
+
+.portfolio-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #eee;
+    margin: 0 0 12px 0;
+    line-height: 1.3;
+}
+
+.portfolio-excerpt {
+    color: #bbb;
+    font-size: 13px;
+    line-height: 1.4;
+    margin: 0;
+    flex-grow: 1;
+}
+
+/* Enhanced Portfolio Filters */
+.portfolio-filters-wrapper {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-filters {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    background: rgba(68, 68, 68, 0.8);
+    padding: 12px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+    margin: 0 !important;
+}
+
+.portfolio-filters li {
+    margin: 0 !important;
+    opacity: 1 !important;
+    display: block !important;
+}
+
+.portfolio-filters li a {
+    display: flex !important;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(4, 180, 224, 0.2);
+    border-radius: 20px;
+    color: #bbb !important;
+    font-weight: 500;
+    font-size: 13px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.portfolio-filters li a:hover {
+    background: rgba(4, 180, 224, 0.1);
+    border-color: #04b4e0;
+    color: #04b4e0 !important;
+    transform: translateY(-2px);
+}
+
+.portfolio-filters li.active a {
+    background: #04b4e0 !important;
+    border-color: #04b4e0;
+    color: #fff !important;
+    box-shadow: 0 4px 15px rgba(4, 180, 224, 0.3);
+}
+
+.portfolio-filters li a i {
+    font-size: 14px;
+}
+
+/* Portfolio Introduction */
+.portfolio-intro {
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.portfolio-description {
+    font-size: 15px;
+    color: #bbb;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .portfolio-grid.modern-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+
+    .portfolio-filters {
+        gap: 6px !important;
+        padding: 10px !important;
+    }
+
+    .portfolio-filters li a {
+        padding: 8px 12px !important;
+        font-size: 12px !important;
+    }
+
+    .portfolio-item-img {
+        height: 160px;
+    }
+
+    .portfolio-item-info {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-filters li a span {
+        display: none;
+    }
+
+    .portfolio-filters li a {
+        padding: 10px !important;
+        border-radius: 50% !important;
+        width: 40px;
+        height: 40px;
+        justify-content: center;
+    }
+}
+
+/* Debug helper */
+.portfolio-grid.modern-grid::after {
+    content: 'Grid loaded';
+    position: absolute;
+    top: -20px;
+    right: 0;
+    font-size: 10px;
+    color: #04b4e0;
+    opacity: 0.5;
+}
