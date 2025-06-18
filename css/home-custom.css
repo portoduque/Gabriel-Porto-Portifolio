@@ -1,0 +1,155 @@
+/* Custom styles for home page - Based on the second image design */
+
+.home-intro {
+    text-align: center !important;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.greeting-text {
+    color: #04b4e0;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    padding-left: 40px;
+}
+
+.greeting-text:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 2px;
+    background-color: #04b4e0;
+}
+
+.main-name {
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.home-intro .sp-subtitle {
+    color: #04b4e0;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.intro-description {
+    color: #d5d5d5;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 25px auto 35px auto;
+    text-align: center;
+    max-width: 500px;
+}
+
+.home-buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.home-buttons .btn {
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    border: 2px solid transparent;
+}
+
+.home-buttons .btn-primary {
+    background-color: #04b4e0;
+    color: #ffffff;
+    border-color: #04b4e0;
+}
+
+.home-buttons .btn-primary:hover {
+    background-color: transparent;
+    color: #04b4e0;
+    border-color: #04b4e0;
+}
+
+.home-buttons .btn-secondary {
+    background-color: transparent;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.home-buttons .btn-secondary:hover {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .main-name {
+        font-size: 36px;
+    }
+
+    .greeting-text {
+        font-size: 14px;
+        padding-left: 30px;
+    }
+
+    .home-intro .sp-subtitle {
+        font-size: 18px;
+    }
+
+    .intro-description {
+        font-size: 15px;
+    }
+
+    .home-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-buttons .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-name {
+        font-size: 28px;
+    }
+
+    .greeting-text {
+        padding-left: 25px;
+    }
+
+    .greeting-text:before {
+        width: 15px;
+    }
+}
+
+/* Override the text-rotation carousel to align center */
+.home-intro .text-rotation {
+    text-align: center;
+}
+
+.home-intro .owl-carousel .item {
+    text-align: center;
+}
