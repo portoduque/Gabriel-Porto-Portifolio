@@ -8,7 +8,7 @@
 
 **Analista e Desenvolvedor de Sistemas | Frontend Developer | Software Engineer**
 
-[🌐 Ver Portfólio](./index.html) | [📧 Contato](mailto:portoduque@outlook.com) | [💼 LinkedIn](https://www.linkedin.com/in/portoduque)
+[🌐 Ver Portfólio](https://portoduque.github.io/gabrielportocv/) | [📧 Contato](mailto:portoduque@outlook.com) | [💼 LinkedIn](https://www.linkedin.com/in/portoduque)
 
 </div>
 
